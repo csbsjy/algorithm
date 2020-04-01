@@ -21,7 +21,7 @@ public class MergeSort {
         int left = 0;
         int right = 0;
         int base = 0;
-        for (; left < frontElements.length && right < backElements.length; ) {
+        while (left < frontElements.length && right < backElements.length) {
             if (frontElements[left] < backElements[right]) {
                 sortedElements[base++] = frontElements[left++];
             } else {
