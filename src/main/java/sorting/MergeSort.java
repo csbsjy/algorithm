@@ -30,11 +30,11 @@ public class MergeSort {
         }
 
         if (left < right) {
-            while ((left < right) && base < sortedElements.length) {
+            while ((left <= right) && base < sortedElements.length) {
                 sortedElements[base++] = frontElements[left++];
             }
         } else {
-            while ((left > right) && base < sortedElements.length) {
+            while ((left >= right) && base < sortedElements.length) {
                 sortedElements[base++] = backElements[right++];
             }
         }
